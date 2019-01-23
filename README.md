@@ -5,7 +5,7 @@
 关于**社区发现**和**Girvan-Newman算法**：
 
  - 社区发现：[Wiki][3]
- - sikasjc的博客：[GN算法][4]，[针对加权图的GN算法][5]
+ - sikasjc的博客：[GN算法][4]，[加权的GN算法][5]
  - Girvan–Newman算法：[Wiki][6]
 
 ## Python环境
