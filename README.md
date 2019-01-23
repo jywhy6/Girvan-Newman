@@ -4,9 +4,10 @@
 
 关于**社区发现**和**Girvan-Newman算法**：
 
- - 社区发现：[Wiki][3]
- - sikasjc的博客：[GN算法][4]，[加权的GN算法][5]
+ - sikasjc的博客：[GN算法][3]，[加权的GN算法][4]
+ - 社区发现：[Wiki][2]
  - Girvan–Newman算法：[Wiki][6]
+ - 模块度Q：[Wiki][5]
 
 ## Python环境
 
@@ -15,7 +16,7 @@
  - Matplotlib 2.2.2
 
 ## 数据集
-使用[SNAP][6]提供的Twitter数据集（有向无权图）。
+使用[SNAP][7]提供的Twitter数据集（有向无权图）。
 
 注：带权Girvan-Newman算法的测试代码中，边的权重为随机生成值。
 
@@ -23,5 +24,6 @@
 [2]: https://en.wikipedia.org/wiki/Community_structure
 [3]: https://sikasjc.coding.me/2017/12/20/GN/
 [4]: https://sikasjc.github.io/2018/04/28/weighted_GN/
-[5]: https://en.wikipedia.org/wiki/Girvan%E2%80%93Newman_algorithm
-[6]: https://snap.stanford.edu/data/
+[5]: https://en.wikipedia.org/wiki/Modularity_(networks)
+[6]: https://en.wikipedia.org/wiki/Girvan%E2%80%93Newman_algorithm
+[7]: https://snap.stanford.edu/data/
