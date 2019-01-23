@@ -27,7 +27,7 @@ class GirvanNewman:
             self.G.remove_edge(max_cent_edge[0], max_cent_edge[1])
             print("Removed an edge: (" + str(max_cent_edge[0]) + ", " +
                   str(max_cent_edge[1]) + ")")
-            # List the the connected nodes
+            # List the the connected components
             # For undirected graphs, use nx.connected_components
             components = [
                 list(c) for c in list(nx.weakly_connected_components(self.G))
@@ -95,17 +95,17 @@ class GirvanNewman:
 
 
 if __name__ == '__main__':
-    G = nx.read_edgelist(r"..\datasets\twitter_combined.txt")
+    # G = nx.read_edgelist(r"..\datasets\twitter_combined.txt")
 
-    # G = nx.DiGraph()
-    # cnt = 0
-    # with open(r"..\datasets\twitter_combined.txt", "r") as f:
-    #     for line in f:
-    #         tmp = line.split(" ")
-    #         G.add_edge(int(tmp[0]), int(tmp[1].strip()))
-    #         cnt = cnt + 1
-    #         if (cnt > 30000):
-    #             break
+    G = nx.DiGraph()
+    cnt = 0
+    with open(r"..\datasets\twitter_combined.txt", "r") as f:
+        for line in f:
+            tmp = line.split(" ")
+            G.add_edge(int(tmp[0]), int(tmp[1].strip()))
+            cnt = cnt + 1
+            if (cnt > 30000):
+                break
 
     print("Number of Nodes: " + str(G.number_of_nodes()))
     print("Number of Edges: " + str(G.number_of_edges()))
