@@ -90,7 +90,7 @@ class GirvanNewman:
         nx.set_node_attributes(self.G_copy, nodegroup)
 
     def toGml(self, file_name):
-        nx.write_gml(self.G_copy, file_name)
+        nx.write_gml(self.G_copy, r"..\output\\" + file_name)
 
 
 if __name__ == '__main__':
