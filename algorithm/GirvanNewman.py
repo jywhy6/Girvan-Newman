@@ -5,6 +5,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
+
 class GirvanNewman:
     def __init__(self, G):
         self.G_copy = G.copy()
